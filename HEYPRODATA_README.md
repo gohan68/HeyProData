@@ -96,14 +96,21 @@ A pixel-perfect authentication and onboarding system with Login, Sign in, OTP ve
 ```
 /app/frontend/src/
 ├── pages/
-│   ├── Login.jsx          # Login page with username/password
-│   ├── SignIn.jsx         # Sign in page with email/password & validation
-│   ├── ProfilePhoto.jsx   # Profile photo upload page
-│   └── Dashboard.jsx      # Protected dashboard page
+│   ├── Login.jsx              # Login page with username/password
+│   ├── SignIn.jsx             # Sign in page with email/password & validation
+│   ├── OTP.jsx                # OTP verification page
+│   ├── OnboardingName.jsx     # Name input (25% progress)
+│   ├── OnboardingLocation.jsx # Location selection (50% progress)
+│   ├── OnboardingUsername.jsx # Username/alias input (75% progress)
+│   ├── ProfilePhoto.jsx       # Profile photo upload (100% progress)
+│   └── Dashboard.jsx          # Protected dashboard page
+├── components/
+│   ├── ProgressBar.jsx        # Dynamic progress bar component
+│   └── ui/                    # Shadcn UI components
 ├── utils/
-│   └── mockAuth.js        # Mock authentication handlers
-├── App.js                 # Main routing configuration
-└── App.css                # Global styles & animations
+│   └── mockAuth.js            # Mock authentication handlers
+├── App.js                     # Main routing configuration
+└── App.css                    # Global styles & animations
 ```
 
 ## 🔧 Mock Authentication
