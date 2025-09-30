@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../components/ui/button';
 import { Upload } from 'lucide-react';
+import ProgressBar from '../components/ProgressBar';
 
 const ProfilePhoto = () => {
   const navigate = useNavigate();
@@ -27,6 +28,9 @@ const ProfilePhoto = () => {
   const handleContinue = () => {
     if (selectedImage) {
       // Store the image in localStorage for mock purposes
+      const onboardingData = JSON.parse(localStorage.getItem('onboardingData') || '{}');
+      onboardingData.profilePhoto = previewUrl;
+      localStorage.setItem('onboardingData', JSON.stringify(onboardingData));
       localStorage.setItem('profilePhoto', previewUrl);
       navigate('/dashboard');
     }
@@ -34,12 +38,12 @@ const ProfilePhoto = () => {
 
   return (
     <div 
-      className="min-h-screen flex items-center justify-center px-4 py-8"
+      className="min-h-screen flex flex-col items-center justify-center px-4 py-8"
       style={{
         background: 'conic-gradient(from 180deg at 50% 50%, #FA6E80 0deg, #6A89BE 144deg, #85AAB7 216deg, #31A7AC 360deg)'
       }}
     >
-      <div className="w-full max-w-md bg-white rounded-3xl shadow-2xl p-8 animate-in fade-in duration-800">
+      <div className="w-full max-w-md bg-white rounded-3xl shadow-2xl p-8 mb-8 animate-in fade-in duration-800 relative">
         {/* Logo */}
         <div className="text-center mb-8">
           <img 
