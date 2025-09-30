@@ -26,7 +26,34 @@ A pixel-perfect authentication and onboarding system with Login, Sign in, OTP ve
 - Beautiful gradient background on right side
 - Redirects to Profile Photo page on success
 
-### 3. **Profile Photo Page** (`/profile-photo`)
+### 3. **OTP Verification Page** (`/otp`)
+- 5-digit OTP input with auto-focus
+- Email display showing where OTP was sent
+- Auto-advance to next input field
+- Backspace navigation support
+- Security warning message
+- Submit button navigates to onboarding flow
+
+### 4. **Onboarding Flow with Dynamic Progress Bar**
+
+#### Name Page (`/onboarding/name`) - 25% Progress
+- First name & Surname fields
+- Form validation
+- Progress bar showing 25% completion (187.5px / 750px)
+
+#### Location Page (`/onboarding/location`) - 50% Progress
+- Country dropdown (7 countries)
+- State dropdown (6 states)
+- City text input
+- Back button to previous step
+- Progress bar showing 50% completion (375px / 750px)
+
+#### Username Page (`/onboarding/username`) - 75% Progress
+- Alias first name & last name
+- Skip option available
+- Progress bar showing 75% completion (562.5px / 750px)
+
+#### Profile Photo Page (`/onboarding/profile-photo`) - 100% Progress
 - Drag & drop / click to upload image
 - Image preview before upload
 - Continue button (enabled only when image is selected)
