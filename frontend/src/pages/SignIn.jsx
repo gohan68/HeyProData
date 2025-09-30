@@ -54,7 +54,7 @@ const SignIn = () => {
     setIsLoading(true);
     try {
       await mockSignIn(email, password);
-      navigate('/profile-photo');
+      navigate('/otp', { state: { email } });
     } catch (error) {
       toast({
         title: 'Sign in failed',
@@ -70,7 +70,7 @@ const SignIn = () => {
     setIsLoading(true);
     try {
       await mockGoogleAuth();
-      navigate('/profile-photo');
+      navigate('/otp', { state: { email: 'user@gmail.com' } });
     } catch (error) {
       toast({
         title: 'Authentication failed',
@@ -86,7 +86,7 @@ const SignIn = () => {
     setIsLoading(true);
     try {
       await mockAppleAuth();
-      navigate('/profile-photo');
+      navigate('/otp', { state: { email: 'user@icloud.com' } });
     } catch (error) {
       toast({
         title: 'Authentication failed',
