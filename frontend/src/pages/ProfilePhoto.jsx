@@ -98,24 +98,18 @@ const ProfilePhoto = () => {
           </label>
         </div>
 
-        {/* Action Buttons */}
-        <div className="space-y-3">
-          <Button
-            onClick={handleContinue}
-            disabled={!selectedImage}
-            className="w-full h-14 bg-[#FA6E80] hover:bg-[#f95569] text-white text-lg font-medium rounded-[15px] transition-all duration-300 ease-out transform hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
-          >
-            Continue
-          </Button>
-          <Button
-            onClick={handleSkip}
-            variant="outline"
-            className="w-full h-14 border-gray-300 text-gray-700 hover:bg-gray-50 text-lg font-medium rounded-[15px] transition-all duration-300"
-          >
-            Skip for now
-          </Button>
-        </div>
+        {/* Action Button */}
+        <Button
+          onClick={handleContinue}
+          disabled={!selectedImage}
+          className="w-full h-[63px] bg-[#FA6E80] hover:bg-[#f95569] text-white text-lg font-medium rounded-[15px] transition-all duration-300 ease-out transform hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+        >
+          Next
+        </Button>
       </div>
+
+      {/* Progress Bar - 100% */}
+      <ProgressBar progress={100} />
     </div>
   );
 };
