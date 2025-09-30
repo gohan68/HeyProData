@@ -2,7 +2,7 @@
 
 ## 🚀 Project Overview
 
-A pixel-perfect authentication system with Login, Sign in, Profile Photo upload, and Dashboard pages. Built with React, featuring mock authentication ready for backend integration.
+A pixel-perfect authentication and onboarding system with Login, Sign in, OTP verification, multi-step onboarding flow with dynamic progress tracking, and Dashboard. Built with React, featuring mock authentication ready for backend integration.
 
 ## ✨ Features Implemented
 
