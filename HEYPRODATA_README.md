@@ -151,6 +151,11 @@ export const mockLogin = async (username, password, rememberPassword) => {
 - `POST /api/auth/signin` - Sign in with email/password
 - `POST /api/auth/google` - Google OAuth
 - `POST /api/auth/apple` - Apple OAuth
+- `POST /api/auth/verify-otp` - Verify OTP code
+- `POST /api/auth/resend-otp` - Resend OTP
+- `POST /api/onboarding/name` - Save name data
+- `POST /api/onboarding/location` - Save location data
+- `POST /api/onboarding/username` - Save username/alias
 - `POST /api/user/profile-photo` - Upload profile photo
 - `GET /api/user/me` - Get current user data
 
