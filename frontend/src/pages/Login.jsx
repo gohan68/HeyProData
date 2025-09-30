@@ -33,8 +33,8 @@ const Login = () => {
     setIsLoading(true);
     try {
       await mockLogin(username, password, rememberPassword);
-      // Navigate to profile photo page with dissolve animation
-      navigate('/profile-photo');
+      // Navigate to OTP page
+      navigate('/otp', { state: { email: username } });
     } catch (error) {
       toast({
         title: 'Login failed',
