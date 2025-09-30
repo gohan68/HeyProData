@@ -44,15 +44,24 @@ const ProfilePhoto = () => {
       }}
     >
       <div className="w-full max-w-md bg-white rounded-3xl shadow-2xl p-8 mb-8 animate-in fade-in duration-800 relative">
+        {/* Skip Button */}
+        <button
+          onClick={handleSkip}
+          className="absolute top-6 right-6 text-gray-500 hover:text-gray-700 transition-colors duration-200"
+        >
+          Skip
+        </button>
+
         {/* Logo */}
-        <div className="text-center mb-8">
+        <div className="mb-8">
           <img 
             src="https://customer-assets.emergentagent.com/job_2a9bf250-13c7-456d-9a61-1240d767c09d/artifacts/97u04lh8_hpd.png" 
             alt="HeyProData" 
-            className="h-10 mx-auto mb-6"
+            className="h-12 mb-6"
           />
-          <h1 className="text-3xl font-light text-gray-900 mb-2">Upload Profile Photo</h1>
-          <p className="text-gray-500">Add a photo to personalize your account</p>
+          <p className="text-gray-500 text-base">
+            Upload your profile pic that shows character of yours
+          </p>
         </div>
 
         {/* Image Upload Area */}
