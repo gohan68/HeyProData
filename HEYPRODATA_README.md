@@ -210,7 +210,11 @@ The application is already running:
   - `/` → Redirects to `/login`
   - `/login` → Login page
   - `/signin` → Sign in page
-  - `/profile-photo` → Profile upload
+  - `/otp` → OTP verification
+  - `/onboarding/name` → Name input (25% progress)
+  - `/onboarding/location` → Location selection (50% progress)
+  - `/onboarding/username` → Username/alias (75% progress)
+  - `/onboarding/profile-photo` → Profile upload (100% progress)
   - `/dashboard` → Dashboard (protected)
 
 ## 📝 Next Steps for Backend Integration
