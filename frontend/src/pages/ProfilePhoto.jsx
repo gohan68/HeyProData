@@ -33,7 +33,12 @@ const ProfilePhoto = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#6B8FD8] via-[#5DBED8] to-[#E091B3] px-4 py-8">
+    <div 
+      className="min-h-screen flex items-center justify-center px-4 py-8"
+      style={{
+        background: 'conic-gradient(from 180deg at 50% 50%, #FA6E80 0deg, #6A89BE 144deg, #85AAB7 216deg, #31A7AC 360deg)'
+      }}
+    >
       <div className="w-full max-w-md bg-white rounded-3xl shadow-2xl p-8 animate-in fade-in duration-800">
         {/* Logo */}
         <div className="text-center mb-8">
