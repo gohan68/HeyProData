@@ -233,9 +233,12 @@ const SignIn = () => {
       </div>
 
       {/* Right side - Gradient Background */}
-      <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-bl from-[#5DBED8] via-[#E091B3] to-[#6B8FD8] opacity-90"></div>
-        <div className="absolute inset-0 bg-gradient-to-tl from-[#6B8FD8] via-transparent to-[#E091B3] opacity-50"></div>
+      <div 
+        className="hidden lg:flex lg:w-1/2 relative overflow-hidden"
+        style={{
+          background: 'conic-gradient(from 180deg at 50% 50%, #FA6E80 0deg, #6A89BE 144deg, #85AAB7 216deg, #31A7AC 360deg)'
+        }}
+      >
       </div>
     </div>
   );
