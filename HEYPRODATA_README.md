@@ -173,16 +173,20 @@ axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 ### Manual Testing Flow:
 1. Visit `/login` - Try submitting empty form (validation appears)
 2. Fill username & password, check "remember password"
-3. Click Login → Redirects to `/profile-photo`
-4. Upload a photo OR skip
-5. Redirects to `/dashboard` showing user info
-6. Click Logout → Back to `/login`
+3. Click Login → Redirects to `/otp`
+4. Enter 5-digit OTP → Redirects to `/onboarding/name`
+5. Fill First name & Surname → See 25% progress bar → Click Next
+6. Select Country, State, City → See 50% progress bar → Click Next
+7. Fill alias First/Last name (or Skip) → See 75% progress bar → Click Next
+8. Upload profile photo (or Skip) → See 100% progress bar → Click Next
+9. Redirects to `/dashboard` showing all collected info
+10. Click Logout → Back to `/login`
 
 ### Test Sign In Flow:
 1. Visit `/signin`
 2. Type in email and password
-3. Watch real-time validation indicators
-4. Submit form → Profile Photo → Dashboard
+3. Watch real-time validation indicators (uppercase, number, special char)
+4. Submit form → OTP → Name → Location → Username → Profile Photo → Dashboard
 
 ## 🎯 Form Validation
 
