@@ -70,7 +70,7 @@ const Dashboard = () => {
 
             {/* Welcome Message */}
             <h1 className="text-4xl font-light text-gray-900 mb-2">
-              Welcome to HeyProData! 🎉
+              Welcome to HeyProData!
             </h1>
             <p className="text-gray-600 mb-8">
               You're successfully logged in
