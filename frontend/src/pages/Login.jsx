@@ -81,9 +81,12 @@ const Login = () => {
   return (
     <div className="min-h-screen flex">
       {/* Left side - Gradient Background */}
-      <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#6B8FD8] via-[#5DBED8] to-[#E091B3] opacity-90"></div>
-        <div className="absolute inset-0 bg-gradient-to-tr from-[#E091B3] via-transparent to-[#5DBED8] opacity-50"></div>
+      <div 
+        className="hidden lg:flex lg:w-1/2 relative overflow-hidden"
+        style={{
+          background: 'conic-gradient(from 180deg at 50% 50%, #FA6E80 0deg, #6A89BE 144deg, #85AAB7 216deg, #31A7AC 360deg)'
+        }}
+      >
       </div>
 
       {/* Right side - Login Form */}
