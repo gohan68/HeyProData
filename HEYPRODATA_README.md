@@ -126,6 +126,7 @@ All authentication is currently mocked and stored in `localStorage`:
 
 ### Data Storage:
 - User data: `localStorage.getItem('mockUser')`
+- Onboarding data: `localStorage.getItem('onboardingData')` (firstName, surname, country, state, city, alias names)
 - Profile photo: `localStorage.getItem('profilePhoto')`
 
 ## 🔌 Backend Integration Ready
