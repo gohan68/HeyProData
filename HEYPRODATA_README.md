@@ -72,8 +72,15 @@ A pixel-perfect authentication and onboarding system with Login, Sign in, OTP ve
 
 ### Colors
 - Primary Button: `#FA6E80` (coral/pink)
-- Gradients: Blue (#6B8FD8) → Teal (#5DBED8) → Pink (#E091B3)
+- Background Gradient: `conic-gradient(from 180deg at 50% 50%, #FA6E80 0deg, #6A89BE 144deg, #85AAB7 216deg, #31A7AC 360deg)`
+- Progress Bar Gradient: `linear-gradient(90deg, #FA6E80 0%, #6A89BE 43.84%, #85AAB7 65.76%, #31A7AC 109.6%)`
 - Links: `#4A90E2` (blue)
+
+### Progress Bar Specifications
+- Background: 750px × 20px, border-radius 41px, border 2px, white background
+- Progress Fill: Dynamic width (25% = 187.5px, 50% = 375px, 75% = 562.5px, 100% = 750px)
+- Height: 20px, border-radius 10px
+- Smooth transition animation (500ms ease-out)
 
 ### Button Dimensions
 - Login/Sign in Button: 438px × 63px, 15px border-radius
