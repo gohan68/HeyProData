@@ -61,7 +61,7 @@ A pixel-perfect authentication and onboarding system with Login, Sign in, OTP ve
 - Stores image in localStorage (mock)
 - Beautiful centered card design with gradient background
 
-### 4. **Dashboard Page** (`/dashboard`)
+### 5. **Dashboard Page** (`/dashboard`)
 - Welcome message with user info
 - Displays uploaded profile photo or gradient avatar
 - Account information section
